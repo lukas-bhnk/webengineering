@@ -1,3 +1,2 @@
 # team_11
-Please deactivate https and run it on (port 8080, 3000) to see tests.
-To Activate https run it on port 8443 and 3443.
+Im Artefakte-Verzeichnis liegt die Präsentation zur Webapp sowie der Screencast von meinem finalen Teil der Webapp.
