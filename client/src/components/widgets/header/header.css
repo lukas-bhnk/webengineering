@@ -1,0 +1,124 @@
+/* Autor: Lukas Behnke (FH Münster) */
+
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    padding: 0rem 0rem 0rem 0rem;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 5px solid var(--app-primary-color);
+    color:white;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(49, 45, 45);
+}
+
+a:hover {
+    color: white;
+}
+
+.logo-container:hover {
+    color: var(--app-primary-color)
+}
+.logo-container { 
+    padding-top: 0.5rem;
+    display: flex;
+    width: auto;
+}
+h1{
+    display: inline;
+    border-left: 3px solid var(--app-primary-color);
+    padding-left: 5px;
+    font-size: 1rem;
+    padding-top: 4px;
+}
+.logo {
+    width: auto;
+    height: 50px;
+    display: inline;
+}
+
+.menu{
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.menu:hover{
+    background-color: var(--app-primary-color);
+}
+.title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ol a {
+    display: inline-block;
+}
+
+
+.menu-button {
+    display: none;
+}
+  
+@media screen and (max-width: 740px) {
+  ol {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  a {
+      width: 100%;
+  }
+
+  ol:not([open]) {
+    display: none;
+  }
+  
+  li:last-child a {
+    padding-bottom: 0;
+  }
+
+  .menu-button {
+    display: inline;
+    font-size: 1.25rem;
+    user-select: none;
+    padding-right: 1rem;
+    margin: 0;
+    line-height: 1.25rem;
+  }
+
+
+  .menu-button::before {
+    content: '☰';
+    color: rgb(49, 45, 45);
+  }
+
+  .menu-button:not(:disabled) {
+    cursor: pointer;
+  }
+}
+  

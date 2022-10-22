@@ -1,0 +1,49 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "myapp client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && vite --open",
+    "build": "vite build",
+    "lint": "eslint --fix . --ext .ts",
+    "test": "wtr --coverage --watch",
+    "e2e": "npm run build && mocha --config e2e/.mocharc.json"
+  },
+  "keywords": [],
+  "author": "Prof. Dr. Norman Lahme-Hütig (FH Münster)",
+  "license": "ISC",
+  "devDependencies": {
+    "@open-wc/testing-helpers": "^2.0.4",
+    "@types/chai": "^4.3.0",
+    "@types/jest": "^27.5.1",
+    "@types/mocha": "^9.1.1",
+    "@types/sinon": "^10.0.11",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "@web/test-runner": "^0.13.27",
+    "chai": "^4.3.6",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^9.2.2",
+    "node-fetch": "^3.2.0",
+    "nodemon": "^2.0.16",
+    "playwright": "^1.22.2",
+    "postcss-preset-env": "^7.4.3",
+    "prettier": "^2.5.1",
+    "sinon": "^13.0.1",
+    "ts-node": "^10.5.0",
+    "uuid": "^8.3.2",
+    "vite": "^2.8.4"
+  },
+  "dependencies": {
+    "chart.js": "^3.7.1",
+    "chartjs": "^0.3.24",
+    "chartjs-web-components": "^2.8.0",
+    "jest": "^28.1.0",
+    "lit": "^2.2.0"
+  }
+}

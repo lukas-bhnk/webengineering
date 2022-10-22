@@ -1,0 +1,48 @@
+:host {
+  width: 100%;
+}
+
+.container-big {
+  margin-top: 5px;
+  margin-right: 5px;
+  padding-bottom: 15px;
+  height: 100%;
+}
+.container {
+  padding-left: 10px;
+  align-content: space-between; 
+  justify-content: space-between;
+}
+
+.child {
+  margin-left: auto;
+  margin-right: 10px;
+}
+#heading {
+  padding-top:5px;
+}
+
+#goTo {
+  background-color: rgb(152, 154, 156);
+}
+
+#goTo:hover {
+  filter: brightness(120%);
+}
+
+.line {
+  display:flex;
+
+}
+
+span {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 500px){
+  button {
+    font-size: 14px;
+  }
+}
+

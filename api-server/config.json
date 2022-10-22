@@ -1,0 +1,16 @@
+{
+  "server": { "https": true, "port": 3443 },
+  "db": {
+    "use": "mongodb",
+    "connect": {
+      "user": "piggybank",
+      "host": "localhost",
+      "database": "piggybank",
+      "password": "wifhm",
+      "port": {
+        "mongodb": 27017,
+        "psql": 5432
+      }
+    }
+  }
+}

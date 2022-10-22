@@ -1,0 +1,85 @@
+/* Autor: Prof. Dr. Norman Lahme-Hütig (FH Münster) configured Lukas Behnke*/
+
+:host {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-top: solid rgba(0, 0, 0, 1) 1px;
+  border-bottom: solid rgba(0, 0, 0, 0.125) 1px;
+}
+
+
+:host(:not(:first-of-type)) {
+  border-top: none;
+}
+:host(:hover) {
+  background-color: #f6f6f6;
+}
+
+
+slot[name='title']::slotted(*), slot[name='amount']::slotted(*) {
+  flex-grow: 1;
+  margin-left: 0.75rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  min-width: 33.3333333%;
+  max-width: 33.3333333%;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  cursor: pointer;
+}
+
+slot[name='no-entries']::slotted(*) {
+  flex-grow: 1;
+  margin-left: 0.75rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  overflow: hidden;  
+}
+
+ slot[name='category']::slotted(*) {
+  flex-grow: 1;
+  margin-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.remove-expenditure::before {
+  color: #c5344e;
+  font-size: 1rem;
+  font-weight: bold;
+  content: 'x';
+}
+
+.remove-expenditure:hover {
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .remove-expenditure {
+    display: none;
+  }
+
+  :host(:hover) .remove-expenditure {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 500px){
+  * {
+    font-size: 15px;
+  }
+}
+
+

@@ -1,0 +1,61 @@
+.budget {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    height: 250px;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.budget:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.earnings {
+    color: green;
+}
+
+.expenditures {
+    color:red;
+} 
+
+/* div {
+    text-align:center;
+} */
+
+ .funds-number{
+    color: black;
+ }
+
+h2 {
+    text-align: center;
+}
+
+#rent {
+    background-color: tan;
+}
+#food {
+    background-color: lightyellow;
+}
+#clothes {
+    background-color: lightseagreen;
+}
+#travel {
+    background-color: violet;
+}
+#insurance {
+    background-color: lightskyblue;
+}
+#health {
+    background-color: coral;
+}
+#house {
+    background-color: orange;
+}
+#leisure {
+    background-color: pink;
+}
+#other {
+    background-color: gray;
+}

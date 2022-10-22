@@ -1,0 +1,19 @@
+/* Autor: Christopher Lupton (FH-Münster) */
+
+h1,
+h2 {
+  font-weight: lighter;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  appearance: none;
+  width: 100%;
+  border: solid rgba(0, 0, 0, 0.125) 1px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,12 @@
+/* Autor: Prof. Dr. Norman Lahme-Hütig (FH Münster) */
+
+:root {
+  --app-primary-color: #b68323;
+  --app-error-color: #c5344e;
+  --app-info-color: #14854e;
+}
+body {
+  background-color: rgb(221, 220, 220);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}

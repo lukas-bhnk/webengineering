@@ -1,0 +1,11 @@
+#cancel {
+    background-color: rgb(152, 154, 156);
+  }
+  
+#cancel:hover {
+    filter: brightness(120%);
+  }
+
+  #creationDate {
+    font-family: 'Open Sans', sans-serif;
+}

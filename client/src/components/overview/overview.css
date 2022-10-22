@@ -1,0 +1,104 @@
+
+.container{
+    padding:5px;
+}
+
+#middle-text {
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#monthInput {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.child {
+    width: 33.333333%;
+}
+
+.container-text > .child {
+    flex: 1 1 100%; /*grow | shrink | basis */
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+
+.title-earnings, .title-expenditures {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}  
+
+#snippets {
+    padding: 0px;
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    
+}
+
+#savings {
+    border-top: 2px solid grey;;
+    display: inline-block;
+}
+ 
+#previous, #next {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    border: 8px solid transparent;
+    border-right: 8px solid black; 
+    border-left: 0px solid transparent;
+    cursor: pointer;
+  }
+
+h3 {
+    align-items: center;
+    width: 100%;
+}
+
+#next {
+    border: 8px solid transparent;
+    border-left-color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #next, #previous {border: 0px solid transparent;
+        display: none}
+      
+    
+
+    .container :nth-child(1) { order: 2;
+    padding-bottom: 10px; }
+    .container :nth-child(2) { order: 1; 
+    padding-bottom: 10px; }
+    .container :nth-child(3) { order: 3;
+    padding-bottom: 10px; }
+
+    #middle-text :nth-child(1){order: 1;}
+    #middle-text :nth-child(2){order: 2;}
+  }
+
+  @media (max-width: 1000px) {
+      #snippets {
+        flex-direction: column;
+      }
+      #snippets > .child {
+        width: 100%;
+      }
+
+  }

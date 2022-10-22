@@ -1,0 +1,45 @@
+.budget-container {
+   
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 5px;
+    grid-gap: 1em;
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    .budget-container {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-gap: 1em;
+      }
+      
+}
+
+/* #rent {
+    background-color: tan;
+}
+#food {
+    background-color: lightyellow;
+}
+#clothes {
+    background-color: lightseagreen;
+}
+#travel {
+    background-color: violet;
+}
+#insurance {
+    background-color: lightskyblue;
+}
+#health {
+    background-color: coral;
+}
+#house {
+    background-color: orange;
+}
+#leisure {
+    background-color: pink;
+}
+#other {
+    background-color: gray;
+} */
